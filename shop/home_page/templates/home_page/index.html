@@ -1,0 +1,27 @@
+{% load static %}
+<form action="{% url 'glavnaya' %}" method="post">
+    {% csrf_token %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>ПончеЛЛо, главная страница</title>
+    <link href="{% static 'home_page/css/index.css' %}" rel="stylesheet" type="text/css" />
+    <header>
+        <div class="search">
+            !-- Поиск по запросу POST --!
+        </div>
+        <div class="icon1">
+            !-- Создать 2 кнопки, корзина и кнопка для регистрации --!
+        </div>
+        <p class="header">ПончеЛЛо</p>
+        <nav>
+            <ul class="menu">
+                <li><a href="">О нас</a></li>
+                <li><a href="">Каталог</a></li>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</form>
+    

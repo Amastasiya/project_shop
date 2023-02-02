@@ -17,7 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    #path('', default_urlconf), # восстановили ракету
     path('admin/', admin.site.urls),
     path('home_page/', include('home_page.urls')),
 ]
